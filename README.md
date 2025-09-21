@@ -2,7 +2,7 @@
 
 A modern Flutter project for authentication and image display.
 
-<img src="assets/images/1.jpg" alt="Sample Image" width="300" />
+<img src="assets/images/1.jpg" alt="Sample Image" width="150" />
 
 ## Table of Contents
 
