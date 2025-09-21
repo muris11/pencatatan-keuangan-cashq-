@@ -10,152 +10,73 @@ A modern Flutter project for authentication and image display.
     <img src="assets/images/6.jpg" alt="Sample Image 6" width="150" />
     <img src="assets/images/7.jpg" alt="Sample Image 7" width="150" />
     <img src="assets/images/8.jpg" alt="Sample Image 8" width="150" />
-</p>
+## Instalasi
 
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek ini:
 
+1. **Clone Repository**
+    ```bash
+    git clone https://github.com/muris11/pencatatan-keuangan-cashq-.git
+    cd pencatatan-keuangan-cashq-
+    ```
 
-## Table of Contents
+2. **Install Dependencies**
+    Jalankan perintah berikut untuk mengunduh semua dependensi yang dibutuhkan:
+    ```bash
+    flutter pub get
+    ```
 
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Usage Example](#usage-example)
-- [Displaying Images in README (GitHub)](#displaying-images-in-readme-github)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Resources](#resources)
+3. **Konfigurasi Firebase**
+    - Buat project di [Firebase Console](https://console.firebase.google.com/).
+    - Tambahkan aplikasi Android/iOS/Web sesuai kebutuhan.
+    - Unduh file konfigurasi:
+        - Android: `google-services.json` → letakkan di `android/app/`
+        - iOS: `GoogleService-Info.plist` → letakkan di `ios/Runner/`
+    - Aktifkan metode autentikasi Email/Password dan Google Sign-In di Firebase Authentication.
 
-## Project Overview
+4. **Konfigurasi Penting Lainnya**
+    - Pastikan folder `assets/images/` sudah tersedia untuk gambar.
+    - Periksa dan sesuaikan konfigurasi di `pubspec.yaml` agar asset dan dependensi lain terdaftar dengan benar.
+    - Pastikan koneksi internet aktif untuk integrasi Firebase dan autentikasi.
 
-This app demonstrates user authentication (email/password, Google Sign-In) and displays images from local assets. Built with Firebase and Google Sign-In integration. Suitable for personal finance tracking and image gallery features.
+5. **Jalankan Aplikasi**
+    Jalankan aplikasi dengan perintah:
+    ```bash
+    flutter run
+    ```
 
-## Features
+## Fitur Lengkap
 
-- User registration with email verification
-- Login with email/password
-- Google Sign-In
-- Password reset
-- Logout
-- Display images from assets/images (1.jpg - 8.jpg)
-- Responsive UI
-- Firebase integration
+- **Autentikasi Pengguna**
+    - Registrasi dengan email dan password
+    - Verifikasi email setelah registrasi
+    - Login dengan email/password
+    - Login menggunakan Google Sign-In
+    - Reset password melalui email
+    - Logout
 
-## Prerequisites
+- **Integrasi Firebase**
+    - Autentikasi menggunakan Firebase Authentication
+    - Penyimpanan data pengguna di Firebase
 
-- [Flutter SDK](https://docs.flutter.dev/get-started/install)
-- [Dart SDK](https://dart.dev/get-dart)
-- [Firebase account](https://firebase.google.com/)
-- Git
+- **Gallery Gambar**
+    - Menampilkan gambar dari folder `assets/images` (1.jpg hingga 8.jpg)
+    - Navigasi gambar secara responsif
 
-## Getting Started
+- **UI Responsif**
+    - Tampilan menyesuaikan berbagai ukuran layar (mobile, tablet, web)
+    - Desain modern dan mudah digunakan
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/muris11/pencatatan-keuangan-cashq-.git
-   cd pencatatan-keuangan-cashq-
-   ```
-2. **Install dependencies:**
-   ```bash
-   flutter pub get
-   ```
-3. **Firebase setup:**
-   - Configure Firebase for your app (Android/iOS/Web)
-   - Add `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) to respective folders
-   - Enable Email/Password and Google authentication in Firebase Console
-4. **Add images:**
-   Place images named `1.jpg` to `8.jpg` in:
-   ```
-   assets/images/
-   ```
-5. **Update pubspec.yaml:**
-   Ensure assets are listed:
-   ```yaml
-   flutter:
-     assets:
-       - assets/images/1.jpg
-       - assets/images/2.jpg
-       - assets/images/3.jpg
-       - assets/images/4.jpg
-       - assets/images/5.jpg
-       - assets/images/6.jpg
-       - assets/images/7.jpg
-       - assets/images/8.jpg
-   ```
-6. **Run the app:**
-   ```bash
-   flutter run
-   ```
+- **Manajemen Keuangan Pribadi**
+    - Cocok untuk pencatatan keuangan sederhana
+    - Fitur pencatatan transaksi (opsional, jika tersedia di aplikasi)
 
-## Usage Example
+- **Struktur Folder Terorganisir**
+    - Pemisahan kode berdasarkan fitur dan layanan
+    - Mudah dikembangkan dan dipelihara
 
-To display an image from assets in your Flutter app:
+- **Dokumentasi & Sumber Daya**
+    - Panduan instalasi dan penggunaan
+    - Referensi dokumentasi Flutter dan Firebase
 
-```dart
-Image.asset('assets/images/1.jpg')
-```
-
-## Displaying Images in README (GitHub)
-
-To show images in your README on GitHub, use Markdown syntax:
-
-```markdown
-![Description](relative/path/to/image.jpg)
-```
-
-Example:
-
-```markdown
-![Sample Image](assets/images/1.jpg)
-```
-
-> Note: Images will only show on GitHub if they are committed and pushed to the repository.
-
-## Folder Structure
-
-```
-c:/Users/rifqy/Documents/flutterprojects/casq1/
-├── assets/
-│   └── images/
-│       ├── 1.jpg
-│       ├── 2.jpg
-│       ├── 3.jpg
-│       ├── 4.jpg
-│       ├── 5.jpg
-│       ├── 6.jpg
-│       ├── 7.jpg
-│       └── 8.jpg
-├── lib/
-│   └── services/
-│       └── auth_service.dart
-│   └── ...
-├── pubspec.yaml
-└── README.md
-```
-
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements and bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Contact
-
-For questions or feedback, contact:
-
-- Rifqy (GitHub: [muris11](https://github.com/muris11))
-
-## Resources
-
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Firebase Documentation](https://firebase.google.com/docs)
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
----
-
-Developed by Rifqy. Powered by Flutter & Firebase.
+Dengan mengikuti langkah di atas, Anda dapat langsung menjalankan aplikasi dan menikmati seluruh fitur yang tersedia.
