@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "804530870335",
+    "project_id": "cashq-3e8c4",
+    "storage_bucket": "cashq-3e8c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804530870335:android:6cbad059b7ec34d6d1408a",
+        "android_client_info": {
+          "package_name": "com.example.casq1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfNc8EJhPt3MfEXYh7x593Dz5_z5mrj54"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
