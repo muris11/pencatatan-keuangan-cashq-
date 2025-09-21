@@ -5,7 +5,6 @@ A modern Flutter project for authentication and image display.
 <p align="center">
     <img src="assets/images/1.jpg" alt="Sample Image 1" width="150" />
     <img src="assets/images/2.jpg" alt="Sample Image 2" width="150" />
-    <img src="assets/images/3.jpg" alt="Sample Image 3" width="150" />
     <img src="assets/images/4.jpg" alt="Sample Image 4" width="150" />
     <img src="assets/images/5.jpg" alt="Sample Image 5" width="150" />
     <img src="assets/images/6.jpg" alt="Sample Image 6" width="150" />
