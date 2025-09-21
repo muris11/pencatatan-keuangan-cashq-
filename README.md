@@ -1,4 +1,4 @@
-# casq1
+# CASQ
 
 A modern Flutter project for authentication and image display.
 
